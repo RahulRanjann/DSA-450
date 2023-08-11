@@ -36,7 +36,7 @@ void findMinMax(int *arr, int size)
     
 }
 int main() {
-
+   
    int n;
    int arr[n];
    printf("Enter the size of Array\n");
