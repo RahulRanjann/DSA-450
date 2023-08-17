@@ -1,3 +1,10 @@
+/*
+Input:
+N = 5
+A[] = {1, 2, 3, 4, 5}
+Output:
+5 1 2 3 4
+*/
 #include <stdio.h>
 
 void printArray(int *arr, int size)
