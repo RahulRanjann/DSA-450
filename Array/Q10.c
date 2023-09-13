@@ -1,18 +1,21 @@
 #include <stdio.h> 
+#include<maths.h>
  
  int minJumps(int arr[], int n){
-        int count;
-        int next = arr[0];
-        for (int i = 0; i < next; i++)
+    int jump = 0;
+    int pos = 0;
+    int des = 0;
+    for(int i =0; i < n; i++)
+    {
+        des = fmax(des,arr[i]+i);
+        if(pos == i)
         {
-            next = arr[i];
-            if (next > n)
-            {
-                
-            }
-            
+            pos = des;
+            jump ++;
+
         }
-        
+    }
+    return jump
     }
 int main() {
     int size;
